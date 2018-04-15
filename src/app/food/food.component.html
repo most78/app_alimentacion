@@ -1,0 +1,13 @@
+<h2> {{ food.family }} </h2>
+<p> {{ food.id }} </p>
+<div>
+    <label>name:
+        <input [(ngModel)]="food.name" placeholder="name">
+    </label>
+</div>
+<ul class="food">
+  <li *ngFor="let food of food">
+    <span class="badge">({{food.family}})</span> {{food.name}}
+  </li>
+</ul>
+    
